@@ -24,6 +24,11 @@
   color: white;
 }
 
+p {
+  font-family: "Ubuntu Mono", "sans-serif";
+  font-size: 26px;
+}
+
 .App-link {
   color: #61dafb;
 }
