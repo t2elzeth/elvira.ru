@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  nginx:
+    build:
+      context: .
+      args:
+        - apihost=${REACT_APP_API_HOST}
+    container_name: ${PROJECT_NAME}ReactFrontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
